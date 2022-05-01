@@ -180,7 +180,7 @@ const LoginSignUp = () => {
                   />
                 </div>
                 {/* when u click on froget password then  this /password/forgot route will be triggered */}
-                <Link to="/password/forgot">Forget Password ?</Link>
+                {/* <Link to="/password/forgot">Forget Password ?</Link> */}
                 {/* login button below the form */}
                 <input type="submit" value="Login" className="loginBtn" />
               </form>
