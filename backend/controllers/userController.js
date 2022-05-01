@@ -98,10 +98,13 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 
 
     //creating the url that the user will click, 
-    //as frontend mae server 3000 pe chal raha h isilia avi asa nh karenge ,production mae asa karenge
+    // as frontend mae server 3000 pe chal raha h isilia avi asa nh karenge ,production mae asa karenge
     const resetPasswordUrl = `${req.protocol}://${req.get(
         "host"
     )}/password/reset/${resetToken}`;  //we have made a route of this in userroutes
+
+
+
     // const resetPasswordUrl = `${process.env.FRONTEND_URL}/password/reset/${resetToken}`;
 
 

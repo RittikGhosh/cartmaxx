@@ -34,10 +34,10 @@ app.use("/api/", payment);
 
 
 //ek hi port mae we can access frontend as well
-app.use(express.static(path.join(__dirname, "../frontend/build")));
-app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-});
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
+// app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+// });
 
 //Middleware for errors
 app.use(errorMiddleware);
