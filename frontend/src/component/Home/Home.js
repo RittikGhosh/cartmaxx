@@ -44,7 +44,7 @@ const Home = () => {
                     {/* it will be the title when we are in home component */}
                     <MetaData title="CARTMAX" />
                     <div className="banner">
-                        <p>Welcome to CARTMAX</p>
+                        <p>Welcome to CARTMAXX</p>
                         <h1>FIND AMAZING PRODUCTS BELOW</h1>
                         <a href="#container">
                             <button >
