@@ -6,11 +6,12 @@ const nodeMailer = require("nodemailer");
 const sendEmail = async (options) => {
     //transpoter means from whose account you will send the mail ,you can check the docs os nodemailer for for info
     const transporter = nodeMailer.createTransport({
-
-        service: process.env.SMPT_SERVICE,
+        host:"smtp.gmail.com",
+        port: 465,
+        service: 'gmail',
         auth: {
-            user: process.env.SMPT_MAIL,
-            pass: process.env.SMPT_PASSWORD,
+            user: "rittickghosh8670@gmail.com",
+            pass: "867056203322*#*#",
         },
     });
 
@@ -18,7 +19,7 @@ const sendEmail = async (options) => {
 
     //details of the mail u will send
     const mailOptions = {
-        from: process.env.SMPT_MAIL,
+        from: "rittickghosh8670@gmail.com",
         to: options.email,
         subject: options.subject,   //subject in the mail
         text: options.message,  //what we will send in email
