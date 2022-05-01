@@ -98,7 +98,7 @@ function App() {
 
   return (
     <Router>
-      {/* <Header /> */}
+      <Header />
       {/* agar isAuthenticated true h(login h toh) then load useroption component(options for logout,profile) */}
       {isAuthenticated && <UserOptions user={user} />}
       {stripeApiKey && (

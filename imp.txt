@@ -1,3 +1,9 @@
 make a Procfile file,add  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend" in script
 first upload your files in github using the commands given there
+for updates-makes changes in code then,git add . ,git commit -m ""  ,git push origin main 
+
+
+
+
 then in heroku make a new app, follow the commands ,give configs
+for updates in heroku- git add .  ,git commit -am "" ,git push heroku main
