@@ -105,7 +105,7 @@ const LoginSignUp = () => {
   useEffect(() => {
     //if there is any error(like wrong password etc) it will show alert
     if (error) {
-      alert.error(error);
+      // alert.error(error);
       dispatch(clearErrors());
     }
     //if isAuthenticated is true(i.e we get the user) then go to /account route ,then u wont be able to access login/signup page
