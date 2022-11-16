@@ -11,6 +11,7 @@ products in stock and out of stock , can edit reviews.
 • tech used-JavaScript , HTML , CSS , Node , Express ,
 React, Redux , MongoDB , Postman
 
+# link - https://cartmaxx.herokuapp.com/
 # Install Dependencies
 
 **For Backend** - `npm i`
